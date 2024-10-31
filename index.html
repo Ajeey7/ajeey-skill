@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajeey Skill - Hem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header och Navigation -->
+  <header class="header">
+    <div class="container">
+      <h1>Ajeey Skill</h1>
+      <nav>
+        <a href="index.html">Hem</a>
+        <a href="anmalan.html">Anmälan</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Hero sektion med sökfunktion -->
+  <section class="hero">
+    <div class="container">
+      <h2>Utforska kurser och utveckla dina färdigheter</h2>
+      <p>Bygg dina färdigheter med kurser som täcker allt från grunder till avancerade tekniker inom webbutveckling och design.</p>
+      <input type="text" id="search" placeholder="Sök efter kurser..." onkeyup="searchCourses()">
+    </div>
+  </section>
+
+  <!-- Populära Kurser -->
+  <main class="container">
+    <section class="courses-section">
+      <h2>Aktuella Kurser och erbjudande</h2>
+      <div id="courseGrid" class="course-grid">
+        <!-- Kurskort -->
+        <article class="course-card" data-course="webbutveckling">
+          <div class="course-info">
+            <h3>Grundkurs i Webbutveckling</h3>
+            <p>Lär dig HTML, CSS och JavaScript från grunden.</p>
+          </div>
+        </article>
+        
+        <article class="course-card" data-course="javascript">
+          <div class="course-info">
+            <h3>Avancerad JavaScript</h3>
+            <p>Fördjupa dina JavaScript-kunskaper och skapa dynamiska webbappar.</p>
+          </div>
+        </article>
+
+        <article class="course-card" data-course="react">
+          <div class="course-info">
+            <h3>React för Webbutveckling</h3>
+            <p>Skapa interaktiva gränssnitt med React.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Ajeey Skill - Alla rättigheter förbehållna</p>
+      <nav>
+        <a href="privacy.html">Sekretesspolicy</a>
+        <a href="terms.html">Användarvillkor</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

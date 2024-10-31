@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anmälan - Ajeey Skill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header och Navigation -->
+  <header class="header">
+    <div class="container">
+      <h1>Ajeey Skill</h1>
+      <nav>
+        <!-- Kontrollera att dessa filer ligger i samma mapp som denna fil -->
+        <a href="index.html">Hem</a>
+        <a href="anmälan.html">Anmälan</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Anmälan Formulär -->
+  <section class="form-section">
+    <div class="container">
+      <h2>Anmäl dig till en kurs</h2>
+      <p>Fyll i formuläret nedan för att registrera dig för en av våra kurser.</p>
+      
+      <form action="#" method="post" class="signup-form">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="course">Välj kurs:</label>
+        <select id="course" name="course" required>
+          <option value="webbutveckling">Grundkurs i Webbutveckling</option>
+          <option value="javascript">Avancerad JavaScript</option>
+          <option value="react">React för Webbutveckling</option>
+        </select>
+        
+        <label for="date">Startdatum:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <button type="submit" class="submit-btn">Skicka Anmälan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Ajeey Skill - Alla rättigheter förbehållna</p>
+      <nav>
+        <a href="privacy.html">Sekretesspolicy</a>
+        <a href="terms.html">Användarvillkor</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
